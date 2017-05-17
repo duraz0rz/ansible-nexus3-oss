@@ -10,7 +10,7 @@ configuration = new Configuration(
         attributes: [
                 docker: [
                         httpPort: parsed_args.http_port,
-                        v1Enabled : parsed_args.v1_enabled
+                        v1Enabled : Boolean.valueOf(parsed_args.v1_enabled)
                 ],
                 proxy: [
                         remoteUrl: parsed_args.proxy_url,
